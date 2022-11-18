@@ -12,14 +12,12 @@ int main()
     cin >> x;
     cin >> y;
     suma=x+y;
-    suma = 
     roznica=x-y;
     iloczyn=x*y;
     iloraz=x/y;
     cout.precision(2);
-    cout << "suma:" << suma << endl;
-    cout << "różnica:" << roznica << endl;
-    cout << "iloczyn:" << iloczyn << endl;
-    cout << "iloraz:" << iloraz << endl;
-
+    cout << "suma:" << fixed << suma << endl;
+    cout << "różnica:" << fixed << roznica << endl;
+    cout << "iloczyn:" << fixed << iloczyn << endl;
+    cout << "iloraz:" << fixed << iloraz << endl;
 }
