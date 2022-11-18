@@ -5,7 +5,7 @@ int main()
     char a;
     cout << "proszę wprowadzić literę" << endl;
     cin >> a;
-    while(a != "t"){
+    while(a != 't'){
         cout << "proszę wprowadzić literę" << endl;
         cin >> a;
     }    
