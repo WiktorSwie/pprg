@@ -17,7 +17,7 @@ int main()
     else 
     {
         z = x / y;
-        o = x % z;
+        o = x % y;
         cout << "ilość dla gości:" << z;
         cout << "ilość dla organizatora:" << o;
     }
