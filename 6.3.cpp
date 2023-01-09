@@ -47,7 +47,7 @@ int main(){
     {
         for (j = i + 1; j < ilosc; j++)
         {
-            if (vec[j] < tablica[i])
+            if (vec[j] < vec[i])
             {
                 temporary = vec[i];
                 vec [i] = vec [j];
