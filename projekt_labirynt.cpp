@@ -51,53 +51,50 @@ unsigned char labirynt [wysokosc][szerokosc] =
         case 'l':
         if (labirynt[pozx][pozy-1] != '#'){
             if(labirynt[pozx][pozy-1] == '@'){
-                cout << "wygrałeś" << endl;
+                
                 wygryw = 1;
             }
             pozy--;
             labirynt[pozx][pozy+1] = {32};
             break;
         }
-        else cout << "odbiłeś się od ściany" << endl;
         
         case 'p':
         if (labirynt[pozx][pozy+1] != '#'){
             if(labirynt[pozx][pozy+1] == '@'){
-                cout << "wygrałeś" << endl;
+               
                 wygryw = 1;
             }
             pozy++;
             labirynt[pozx][pozy-1] = {32};
             break;
         }
-        else cout << "odbiłeś się od ściany" << endl;
         
         case 'g':
         if (labirynt[pozx-1][pozy] != '#'){
             if(labirynt[pozx-1][pozy] == '@'){
-                cout << "wygrałeś" << endl;
+                
                 wygryw = 1;
             }
             pozx--;
             labirynt[pozx+1][pozy] = {32};
             break;
         }
-        else cout << "odbiłeś się od ściany" << endl;
         
         case 'd':
         if (labirynt[pozx+1][pozy] != '#'){
             if(labirynt[pozx+1][pozy] == '@'){
-                cout << "wygrałeś" << endl;
+            
                 wygryw = 1;
             }
             pozx++;
             labirynt[pozx-1][pozy] = {32};
             break;
         }
-        else cout << "odbiłeś się od ściany" << endl;
         
         }
         if(wygryw == 1){
+            cout << "wygrales" << endl;
         break;
         }
     }
